@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Montserrat');
+  body{
+  background-color:orange;
+  }
+
+  h1{
+    font-family: 'Montserrat', sans-serif;
+  }
+  a{
+    color: red;
+    text-decoration: none;
+    font-size: 24px;
+
+  }
+  a:hover{
+    background-color: purple;
+  }
+  .textLinks{
+    font-size: 10px;
+  }
+  .changeFont{
+    font-family: 'Merriweather', serif;
+
+  }
+
+  .changecustom{
+    font-size: 1.2em;
+  }
+
+  #green{
+    color:green;
+  }
+
+  #red{color:red;
+  }
+
+  #white{color:white;
+  }
+
+  #yellow{color:yellow;
+  }
+  #blue{color:blue;
+  }
