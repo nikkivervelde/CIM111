@@ -1,0 +1,51 @@
+@import "desktopmid.css";
+
+body{
+  background-color: yellow;
+}
+
+
+#grid1{
+  display: block;
+
+}
+#grid2{
+  display: block;
+}
+#grid3{
+  display: block;
+}
+#grid4{
+  display: block;
+}
+.imageGallery{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+
+}
+<nav> {
+  width: 100%;
+  background-color: grey;
+  margin: 0 auto;
+
+}
+</nav>
+
+nav ul{
+  margin-left: -5px
+
+}
+nav ul li {
+  list-style: none;
+  display: block;
+  margin-right: 60px;
+
+}
+nav ul li a{
+  color: white
+  text-decoration: none;
+}
+nav ul li a:hover{
+  color: red;
+}

@@ -1,0 +1,18 @@
+@import "desktop.css";
+body{
+  background-color: black;
+}
+
+#grid1{
+  display: block;
+
+}
+#grid2{
+  display: block;
+}
+.imageGallery{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+
+}
