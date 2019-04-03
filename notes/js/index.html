@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>How to make a photo black and white on photoshop</title>
+    <style>
+      body{
+        width:960px;
+        height: 100px;
+        margin: 0 auto;
+        background-color:purple
+      }
+
+          h1{
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+          }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>How to change a photo to black and white?</h1>
+
+    <h2 id="click1">Click here to see image before</</h2>
+ 	    <img id="imagebefore" class="info" src="photos/before.jpg">
+      <h2 id="click2">Click here see image after</h2>
+      <img id="imageafter"class="info" src="photos/after.jpg">
+
+      <h3 id="click3"> Click to hide images<h3>
+
+
+
+ 	    <h1 id="toggle">Steps to change photo with photoshop</h1>
+ 	    <p id="toggleInfo" class="info">Click on each step, to find out instructions</p>
+
+ 	    <ul>
+ 	      <li id="info1">Step 1</li>
+ 	      <li id="info2">Step 2</li>
+ 	      <li id="info3">Step 3</li>
+ 	      <li id="info4">Step 4</li>
+        <li id="info5">Step 5</li>
+ 	    </ul>
+
+      <div id="replaceText">
+
+      </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+  <script type="text/javascript">
+
+
+    $(document).ready(function(){
+        $(".info").hide();
+          $("body").css("background-color", "purple");
+
+
+          $("#click1").click(function(){
+            $("#imagebefore").show();
+             });
+
+            $("#click2").click(function(){
+              $("#imageafter").show();
+               });
+
+              $("#click3").click(function(){
+           $("#imagebefore").hide()
+           $("#imageafter").hide();
+            });
+
+          $("#toggle").click(function(){
+            $("#toggleInfo").toggle(1000);
+          });
+
+          $("#info1").click(function(){
+            $("#replaceText").html("<h3>First step</h3><img src='photos/firststep.jpg'><p>The fist step is to launch photoshop, then on the top left corner click on the file menue. Then scroll down and click to new.</p>");
+          });
+
+          $("#info2").click(function(){
+            $("#replaceText").html("<h3>Second step</h3><img src='photos/secondstep.jpg'><p>Now you are able to customize your document. Make sure your document follows the list above of the heigh,width and color.Then press create on the bottom right corner.</p>");
+          });
+
+          $("#info3").click(function(){
+            $("#replaceText").html("<h3>Third step</h3> <img src='photos/thirdstep.jpg'><p>Drag the image you wish to alter onto the white canvas</p>");
+          });
+
+
+          $("#info4").click(function(){
+            $("#replaceText").html("<h3>Fourth Step</h3><img src='photos/fourthstep.jpg'><p>This is where it is going to get tricky! On the right side of your screen, you should see the properies panel. In the middle section, is where you see adjusments. You are going to click on the black/white adjument, which will transform your image.</p>");
+        });
+
+        $("#info5").click(function(){
+          $("#replaceText").html("<h3>Fifth Step<h3><img src='photos/fifthstep.jpg'><p> Good job, now you have finished! All you need to is export the file. You have to go back to the file menue,then procced towards export. This will give you an option on how to export your file. The easiest way to export it a png. This will automatically be shown in your documents folder.</p>");
+      });
+
+    });
+
+</script>
+
+  </body>
+</html>
