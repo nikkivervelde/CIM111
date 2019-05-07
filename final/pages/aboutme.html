@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Velde</title>
+    <style>
+
+
+    </style>
+  </head>
+
+  <body>
+    <h1>Everything you need to know</h1>
+
+
+
+
+ 	    <h1 id="toggle">Steps to change photo with photoshop</h1>
+ 	    <p id="toggleInfo" class="info">Click on each step, to find out instructions</p>
+
+ 	    <ul>
+ 	      <li id="info1">Puporse of Site/li>
+ 	      <li id="info2">About the Owner/li>
+ 	      <li id="info3">List of Photographers/li>
+ 	      <li id="info4">Contact Information</li>
+ 	    </ul>
+
+      <div id="replaceText">
+
+      </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+  <script type="text/javascript">
+
+
+    $(document).ready(function(){
+        $(".info").hide();
+          $("body").css("background-color", "white");
+
+
+          $("#toggle").click(function(){
+            $("#toggleInfo").toggle(1000);
+          });
+
+          $("#info1").click(function(){
+            $("#replaceText").html("<h3>Purpose</h3><p>The fist step is to launch photoshop, then on the top left corner click on the file menue. Then scroll down and click to new.</p>");
+          });
+
+          $("#info2").click(function(){
+            $("#replaceText").html("<h3>About the Owner</h3><p>Now you are able to customize your document. Make sure your document follows the list above of the heigh,width and color.Then press create on the bottom right corner.</p>");
+          });
+
+          $("#info3").click(function(){
+            $("#replaceText").html("<h3>List of Photograpghers</h3> <img src='photos/thirdstep.jpg'><p>Drag the image you wish to alter onto the white canvas</p>");
+          });
+
+
+          $("#info4").click(function(){
+            $("#replaceText").html("<h3>Contact Information</h3><img src='photos/fourthstep.jpg'><p>This is where it is going to get tricky! On the right side of your screen, you should see the properies panel. In the middle section, is where you see adjusments. You are going to click on the black/white adjument, which will transform your image.</p>");
+        });
+
+
+    });
+
+</script>
+
+  </body>
+</html>
