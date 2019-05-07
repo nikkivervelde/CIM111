@@ -2,27 +2,59 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Velde</title>
+    <title>Velde-Hiphop Platform</title>
+  <link rel="stylesheet" href="cssdocu/desktop.css" media="only screen and (min-width: 480px)">
+  <link rel="stylesheet" href="cssdocu/mobile.css" media="only screen and (max-width: 480px)">
+
     <style>
+    @media only screen and (max-width: 480px){
+
+    }
+
 
 
     </style>
   </head>
+  <header>
+    <section>
+      <img class="imageGallery" src="Photos/velde.jpg">
+      <h1 id="white">All Things Hiphop</h1>
+      </section>
 
+    <nav>
+    <ul>
+      <li>
+      <a href="index.html">Home</a>
+    </li>
+      <li>
+      <a href="articles.html">Articles<a/>
+      </li>
+      <li>
+      <a href="photography.html">Photography</a>
+    </li>
+    <li>
+      <a href="aboutme.html">More Info</a>
+    </link>
+    </ul>
+    </nav>
+
+
+  </header>
+  <main>
   <body>
-    <h1>Everything you need to know</h1>
+    <h1 id="white">Everything you need to know</h1>
 
 
 
 
- 	    <h1 id="toggle">Steps to change photo with photoshop</h1>
- 	    <p id="toggleInfo" class="info">Click on each step, to find out instructions</p>
+
+
 
  	    <ul>
- 	      <li id="info1">Puporse of Site/li>
- 	      <li id="info2">About the Owner/li>
- 	      <li id="info3">List of Photographers/li>
- 	      <li id="info4">Contact Information</li>
+ 	      <li id="info1">Purpose of Site</li>
+ 	      <li id="info2">Articles</li>
+ 	      <li id="info3">List of Photographers</li>
+ 	      <li id="info4">More Info</li>
  	    </ul>
 
       <div id="replaceText">
@@ -38,33 +70,34 @@
     $(document).ready(function(){
         $(".info").hide();
           $("body").css("background-color", "white");
+          $("body").css("font-family", "'Varela Round', sans-serif");
 
 
-          $("#toggle").click(function(){
-            $("#toggleInfo").toggle(1000);
-          });
+
 
           $("#info1").click(function(){
-            $("#replaceText").html("<h3>Purpose</h3><p>The fist step is to launch photoshop, then on the top left corner click on the file menue. Then scroll down and click to new.</p>");
+            $("body").css("font-family", "'Varela Round', sans-serif");
+            $("#replaceText").html("<h3 id='white'>Purpose</h3><p id='black'>The purpose of Velde is to inform fanatics of the HipHop Community about real stories based on facts. Nothing here is gossip or fake news. All information comes from reliable sources directly from the arists and prodcuers. We offer sneak peaks to ablum releases, intimate interviews with the artists about their craft and exlusive photos taken by the talented youth.See us at your next festival. </p>");
           });
 
           $("#info2").click(function(){
-            $("#replaceText").html("<h3>About the Owner</h3><p>Now you are able to customize your document. Make sure your document follows the list above of the heigh,width and color.Then press create on the bottom right corner.</p>");
+            $("#replaceText").html("<h3 id='white'>About the Owner</h3> <img class='imageGallery'src='Photos/nicole.jpg'><p id='black'>This media platform began as an Instagram page, but quicly grew among the Hiphop Community. Velde came from Nicole Vervelde when she was 18 years old. She had the priveldge to meet a lot of artists, thus she quickly fell in love with the culture of Hiphop. From Biggie and Tupac to Jcole and Kanye West, Nicole respected all of them. Thus she wanted creative and engaging ways to show the truth behind the artists while informing people on the history of hiphop.</p>");
           });
 
           $("#info3").click(function(){
-            $("#replaceText").html("<h3>List of Photograpghers</h3> <img src='photos/thirdstep.jpg'><p>Drag the image you wish to alter onto the white canvas</p>");
+            $("#replaceText").html("<h3 id='white'>List of Photograpghers</h3> <ul id='black'> <li>Gunner Stahl</li> <li>Dee Knows</li> <li>Theo Skurda</li><li>Henry Hwu</li></ul>");
           });
 
 
           $("#info4").click(function(){
-            $("#replaceText").html("<h3>Contact Information</h3><img src='photos/fourthstep.jpg'><p>This is where it is going to get tricky! On the right side of your screen, you should see the properies panel. In the middle section, is where you see adjusments. You are going to click on the black/white adjument, which will transform your image.</p>");
+            $("#replaceText").html("<h3 id='white'>Contact Information</h3> <ul id='black'> <li>velde@hotmail.com</li> <li> Instagram:Velde_Today</li></ul>");
         });
 
 
     });
 
 </script>
-
+</main>
+<footer></footer>
   </body>
 </html>

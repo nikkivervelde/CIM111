@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"
+  <head>
+    <meta charset="utf-8">
+    <title>Velde- HipHop Platform</title>
+  <link rel="stylesheet" href="cssdocu/desktop.css" media="only screen and (min-width: 480px)">
+  <link rel="stylesheet" href="cssdocu/mobile.css" media="only screen and (max-width: 480px)">
+
+    <style>
+    @media only screen and (max-width: 480px){
+
+    }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <section>
+        <img class="imageGallery" src="Photos/velde.jpg">
+        <h1 id="white">All Things Hiphop</h1>
+        </section>
+
+      <nav>
+      <ul>
+        <li>
+        <a href="index.html">Home</a>
+      </li>
+        <li>
+        <a href="articles.html">Articles<a/>
+        </li>
+        <li>
+        <a href="photography.html">Photography</a>
+      </li>
+      <li>
+        <a href="aboutme.html">More Info</a>
+      </link>
+      </ul>
+      </nav>
+
+
+    </header>
+    <main>
+      <div id="grid2">
+
+
+                <h1 id="white">Recent Articles</h1>
+                <div>
+<div id="grid1">
+
+
+          <h4 id="white">Death of Nipsey Hustle</h4>
+
+
+        <img class="imageGallery2" src="Photos/nipsey.jpg">
+
+
+
+      <p id="info1">Read More</p>
+<div id=grid1>
+    <h4 id="white">Is Yandi releasing soon?</h4>
+    <img class="imageGallery2" src="Photos/kanye.jpg">
+  <p id="info2">Read More</p>
+
+        <div id="replaceText">
+
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+        <script type="text/javascript">
+
+        $(document).ready(function(){
+          $(".info").hide();
+            $("body").css("background-color", "white");
+            $("body").css("font-family", "'Varela Round', sans-serif");
+
+            $("#toggle").click(function(){
+              $("#toggleInfo").toggle(1000);
+            });
+
+            $("#info1").click(function(){
+              $("body").css("font-family", "'Varela Round', sans-serif");
+              $("#replaceText").html("<p id='black'> Nipsey Hustle was killed infront of his clothing store in CrenShaw. Nipsey was an iconic rapper while also having a prominent role in his community . He was a peacemaker between rival gangs such as the bloods and crips. He has been in the rap game since he was 16 years old. Yet he has spent much of his time giving back to his communuty.</p>");
+            });
+            $("#info2").click(function(){
+                $("body").css("font-family", "'Varela Round', sans-serif");
+                $("#replaceText").html("<p id='black'>Kanye West has yet to release his new album 'Yandi',even though it was meant to be released in Novemeber. His wife,Kim Kardashian, hinted that the album would be released in November as well on Social Media. Yet Kanye fans were disapointed when nothing was shown on the day itself.Kanye tweeted with an apology, stating that he is taking his time to make the perfect album.His label and his friends have made no comment to this, refusing to get involved. The album is to have featured J Cole, Chance The Rapper,Pusha T and Jay Z. In addition to award winning artists, the albuk will include collaborations with international artists. Kanye is going back to the culture; africa. He has been seen working in Nairobi,Kenya.</p>");
+              });
+
+
+
+          });
+
+      </script>
+      </main>
+      <footer></footer>
+        </body>
+      </html>

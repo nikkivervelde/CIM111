@@ -1,0 +1,60 @@
+@import "desktop.css";
+header {
+    width: 100%;
+    height: auto;
+
+}
+
+body{
+  background-color: white;
+}
+
+#grid1{
+  display: block;
+
+}
+#grid2{
+  display: block;
+}
+#grid3{
+  display: block;
+}
+
+}
+.imageGallery{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+
+}
+<nav> {
+  width: 400px;
+  background-color: white;
+  margin: 0 auto;
+  height:auto;
+
+}
+
+
+nav ul{
+  margin-left: 0px
+
+}
+nav ul li {
+  list-style: none;
+  width: 100%;
+  display: block;
+  margin-right: 0px;
+}
+nav ul li a{
+  color: black;
+  font-family:'Varela Round', sans-serif;
+}
+nav ul li a:hover{
+  color: pink;
+}
+#white{
+  color:pink;
+  font-family:'Varela Round', sans-serif;
+  display: block;
+}
